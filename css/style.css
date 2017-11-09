@@ -1,0 +1,32 @@
+/* Your custom styles */
+
+.home{
+    background-color: #33B5E5;
+    height: 550px;
+}
+.round{
+        border-radius: 50px; 
+        border-radius:50px;
+        border:none;
+}
+
+.text-branco{
+    color: #ffffff;
+}
+
+.top-mat{
+    margin-top:36px;
+}
+
+.logo{
+    width:180px ;
+    height:60px ;
+}
+
+.indica-blue{
+    background-color:#33B5E5;
+}
+
+.top-card-2{
+    margin-top: 50px;
+}
