@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,76 +15,95 @@
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="nav nav-bar indica-blue">
-        <logo>
-            <img src="img/logo_.png" alt="logo indicai" class="logo">
-        </logo>
+        <div class="animated fadeInDown">
+            <logo>
+                <img src="img/logo_.png" alt="logo indicai" class="logo">
+            </logo>
+        </div>
+
     </div>
     <div class="home">
-            <!-- Start your project here-->
-    <div style="height: 100vh" class="container">
-            <div class="flex-center flex-column text-branco">
-                <h1 class="animated fadeIn mb-4">Os melhores profissionais para você</h1>
-    
-                <h5 class="animated fadeIn mb-3">Pesquise e selecione os mais bem ranqueados profissionais da cidade para resolver seu problema</h5>
-    
-                <button class="btn btn-elegant round top-mat">Indicaí em breve</button>
+        <!-- Start your project here-->
+        <div class="container" style="height: 60vh">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class=" flex-column text-branco app-store">
+                        <h1 class="animated fadeIn mb-4">Os melhores profissionais você encontra aqui</h1>
+                        <h5 class="animated fadeIn mb-3">Pesquise e selecione os mais bem ranqueados profissionais da cidade para resolver seu problema.</h5>
+                        <div class="d-flex app-store">
+
+                            <button class="btn btn-elegant fab-btn animated fadeInUp">
+                                <i class="fa fa-android fa-2x"></i>
+                            </button>
+                            <button class="btn btn-elegant fab-btn  animated fadeInUp">
+                                <i class="fa fa-apple"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="img/ui.png" alt="iphone-ui" class="iphone img-fluid top-mat animated fadeInDown">
+                </div>
             </div>
         </div>
     </div>
+
     <!-- Start your project here-->
     <div style="height: 60vh">
         <div class="container">
-                <div class="row top-mat">
-                        <div class="col-md-4">
-                           <div class="card">
-                                <img src="img/2.svg" alt="" class="top-mat">
-                               <div class="card-body">
-                                   <div class="title">
-                                     <p>Encontre profissionais</p>
-                                   </div>
-                                   <div class="card-text">
-                                       <p>De maneira simples, veja prestadores de serviços na sua região. </p>
-                                   </div>
-                                   
-                               </div>
-                           </div>                  
-                        </div>
-                        <div class="col-md-4">
-                                <div class="card">
-                                     <img src="img/badge.svg" alt="" class="top-mat">
-                                    <div class="card-body  top-card-2">
-                                        <div class="title">
-                                          <p>Mais bem raqueados</p>
-                                        </div>
-                                        <div class="card-text">
-                                            <p>Veja os melhores profissionais baseado em indicações e avaliações serviço </p>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
+            <div class="row top-mat-card md-bottom">
+                <div class="col-md-4 top-mat">
+                    <div class="card">
+                        <img src="img/2.svg" alt="" class="top-mat hidden-sm-down">
+                        <div class="card-body">
+                            <div class="title text-center">
+                                <p>Encontre profissionais</p>
+                            </div>
+                            <div class="card-text">
+                                <p>De maneira simples, veja prestadores de serviços na sua região. </p>
+                            </div>
 
-                             </div>
-                        
-                             <div class="col-md-4">
-                                    <div class="card">
-                                         <img src="img/1.svg" alt="" class="top-mat">
-                                        <div class="card-body  top-card-2">
-                                            <div class="title text-center">
-                                              <p>Selecione e contrate</p>
-                                            </div>
-                                            <div class="card-text">
-                                                <p>Serviços com pessoas </p>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                 </div>         
+                        </div>
                     </div>
+                </div>
+                <div class="col-md-4 top-mat">
+                    <div class="card">
+                        <img src="img/badge.svg" alt="" class="top-mat">
+                        <div class="card-body  top-card-2">
+                            <div class="title text-center">
+                                <p>Mais bem raqueados</p>
+                            </div>
+                            <div class="card-text">
+                                <p>Veja os melhores profissionais baseado em indicações e avaliações serviço </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 top-mat">
+                    <div class="card">
+                        <img src="img/1.svg" alt="" class="top-mat">
+                        <div class="card-body  top-card-2">
+                            <div class="title text-center">
+                                <p>Selecione e contrate</p>
+                            </div>
+                            <div class="card-text">
+                                <p>Serviços com pessoas mais bem indicados e qualificadas, com segurança e agilidade </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- /Start your project here-->
+
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
@@ -94,6 +114,19 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-</body>
 
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB-Qllvj21FcQiOpcZrYeqs9S_aXRtJ1Rw",
+        authDomain: "myflix-6b097.firebaseapp.com",
+        databaseURL: "https://myflix-6b097.firebaseio.com",
+        projectId: "myflix-6b097",
+        storageBucket: "myflix-6b097.appspot.com",
+        messagingSenderId: "36215122561"
+      };
+      firebase.initializeApp(config);
+    </script>
+</body>
 </html>

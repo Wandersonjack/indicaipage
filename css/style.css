@@ -17,6 +17,9 @@
 .top-mat{
     margin-top:36px;
 }
+.top-mat-2{
+    margin-top:56px;
+}
 
 .logo{
     width:180px ;
@@ -30,3 +33,37 @@
 .top-card-2{
     margin-top: 50px;
 }
+
+.iphone{
+
+    height:650px ;
+}
+
+.top-mat-card {
+    margin-top: 160px;
+}
+
+.card{
+    box-shadow:5px 5px 25px 0 rgba(46,61,73,.2) !important;
+}
+.card:hover{
+
+    box-shadow:1px 1px 12px 0 rgba(46,61,73,.2) !important;
+
+}
+
+
+.fab-btn{
+    height: 80px;
+    border-radius: 100%;
+}
+
+
+.app-store{
+    margin-top: 170px ;
+}
+
+.md-bottom{
+    margin-bottom: 60px;
+}
+
